@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mark Attendance</title>
+    <title>View Students</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Mark Attendance</h1>
+    <h1>All Students</h1>
 
-    <label>Select Date:</label>
-
-    <input type="date" id="attendanceDate">
-
+    <input type="text" id="search" placeholder="Search by name or roll number" onkeyup="searchStudent()">
     <br><br>
 
     <table>
-
         <thead>
             <tr>
                 <th>Roll Number</th>
                 <th>Name</th>
-                <th>Attendance</th>
+                <th>Action</th>
             </tr>
         </thead>
 
-        <tbody id="studentList">
+        <tbody id="studentTable">
         </tbody>
-
     </table>
 
     <br>
-
-    <button onclick="saveAttendance()">Save Attendance</button>
-
-    <br><br>
 
     <a href="index.html">Back to Home</a>
 

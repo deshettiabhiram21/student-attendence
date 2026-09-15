@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Attendance</title>
+    <title>Add Student</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Student Attendance</h1>
+    <h1>Add Student</h1>
 
-    <table>
+    <label>Name:</label>
+    <input type="text" id="name">
 
-        <thead>
-            <tr>
-                <th>Roll Number</th>
-                <th>Name</th>
-                <th>Attendance</th>
-            </tr>
-        </thead>
+    <br><br>
 
-        <tbody id="studentList">
-        </tbody>
+    <label>Roll Number:</label>
+    <input type="text" id="rollNo">
 
-    </table>
+    <br><br>
 
-    <br>
-
-    <button onclick="saveAttendance()">Save Attendance</button>
+    <button onclick="addStudent()">Add Student</button>
 
     <br><br>
 
